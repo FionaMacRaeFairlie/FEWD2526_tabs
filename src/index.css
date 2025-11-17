@@ -68,15 +68,30 @@ button:focus-visible {
 }
 .tab-header {
   display: flex;
-  border-bottom: 1px solid #ccc;
   margin-left:5px;
-  padding-left: 10px;
   min-width: 10%;
 }
 .tab-item {
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-radius: 20px 20px 0 0;
+  /* margin-right: 5px; */
   padding: 10px 20px;
   cursor: pointer;
-  border: none;
-  background: none;
+  /* background: none; */
+  background-color: #f9f9f9;
   font-size: 16px;
+}
+.tab-item:first-of-type {
+  border-left: 1px solid #ccc;
+}
+.tab-content {
+  border: 1px solid #ccc;
+  border-top: none;
+  padding: 20px;
+  border-radius: 0 20px 20px 20px;
+  background-color: #f9f9f9;
+  min-height: 200px;
+  text-align: left;
+  margin-left:5px;
 }

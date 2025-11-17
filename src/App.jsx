@@ -1,12 +1,13 @@
-import { useState } from 'react'
 import './App.css'
-import Example from './tabs.jsx'
+import TabsExample from './Example'
+import Weather from './Weather'
 
 function App() {
 
   return (
     <>
-      <Example />
+      <TabsExample />
+      <Weather />
     </>
   )
 }
